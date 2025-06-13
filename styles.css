@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-principal {
+  display: flex;
+  grid-row: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 70px 20px 20px;
+}
+.logo {
+  width: 220px;
+}
+.info-mario {
+  font-size: 17px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.text-mario {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+}
+
+.entre-contato,
+.enviar {
+  color: #fff;
+  background: linear-gradient(90deg, #f90000, #a20000);
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: 900;
+}
+.enviar {
+  opacity: 0;
+}
+
+.enviar:hover,
+.entre-contato:hover {
+  background: linear-gradient(90deg, #d70000, #7e0000);
+}
+.enviar:active,
+.entre-contato:active {
+  transform: translateY(5px);
+  
+}
+.marioeluigi {
+  width: 320px;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
+.video-mario {
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+.mascara-video {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.372);
+  background-image: linear-gradient(
+    110deg,
+    rgba(0, 0, 0, 0.97) 20%,
+    rgba(0, 0, 0, 0.23) 50%,
+    rgba(0, 0, 0, 0.97) 80%
+  );
+}
+
+/* area do form   */
+
+.formsBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  background: #00000089;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.fale-Conosco {
+  z-index: 4;
+  position: absolute;
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  max-width: 300px;
+  border-radius: 5px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+input,
+textarea {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #676767;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline-color: #7e0000;
+  font-weight: 900;
+}
+
+textarea {
+  height: 70px;
+}
+
+.fechar-form {
+  font-size: 12px;
+  text-align: center;
+  color: #d70000;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.fechar-form:hover {
+  text-decoration: underline;
+}
+
+/* pagina de obrigado   */
+
+.obrigado-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.obrigado {
+  color: #54cc17;
+  font-size: 50px;
+}
+
+.solicitação {
+  color: #fff;
+  font-size: 25px;
+}
+.jumpirmãos {
+  width: 300px;
+  filter: drop-shadow(18px 10px 7px rgba(0, 0, 0, 0.7));
+}
+
+@media screen and (max-width: 800px) {
+  .box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    gap: 20px;
+  }
+
+  .logo {
+    top: 100px;
+    width: 200px;
+  }
+
+  .info-mario {
+    font-size: 15px;
+  }
+  .text-mario {
+    font-size: 13px;
+  }
+
+  .marioeluigi {
+    width: 270px;
+  }
+}
+
+
+/* .animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
